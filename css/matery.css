@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, pink 30%, cyan 50%, green 100%);
+    background-image: linear-gradient(to right, pink 0%, cyan 100%);
     opacity: 0.8;
 }
 
@@ -551,10 +551,11 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
+/* 此处是给banner添加带模糊颜色的切换效果，不喜欢我直接注释掉 */
+/* .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+} */
 
 .bg-cover:before,
 .bg-cover:after {

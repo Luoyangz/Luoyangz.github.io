@@ -258,7 +258,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, pink 0%, cyan 100%);
     opacity: 0.8;
 }
 
@@ -1319,7 +1319,7 @@ thead {
 
 .chip-container .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    background: linear-gradient(to right, pink 0%, cyan 100%) !important;
 }
 
 .chip .tag-length {
@@ -1808,7 +1808,7 @@ thead {
 
 .other-skills .chip:hover {
     color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, pink 0%, cyan 100%);
     border: 1px solid #4cbf30;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
@@ -1903,9 +1903,10 @@ footer .copy-right {
     margin-bottom: 0;
     z-index: 998;
 }
-
+/* 回到顶部小火箭样式 */
 .top-scroll .btn-floating {
     background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    /* background: linear-gradient(to bottom right, #8BF2F4 0%, #7FFFAA 100%); */
     width: 48px;
     height: 48px;
 }

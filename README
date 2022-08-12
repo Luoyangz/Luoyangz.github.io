@@ -1,0 +1,1 @@
+1、首页banner每天一张，各gif与jpg各有7张，可以随时切换，文件地址在\themes\matery\source\medias，生成文件在themes/layout/_partial/bg-cover-content.ejs

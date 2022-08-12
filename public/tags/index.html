@@ -356,39 +356,38 @@
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    我是zhj
-                
-            </div>
+  <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+    <div class="brand">
+      <div class="title center-align">
+         我是zhj 
+      </div>
 
-            <div class="description center-align">
-                
-                    <span id="subtitle"></span>
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                    <script>
-                        var typed = new Typed("#subtitle", {
-                            strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
-                            startDelay: 300,
-                            typeSpeed: 100,
-                            loop: true,
-                            backSpeed: 50,
-                            showCursor: true
-                        });
-                    </script>
-                
-            </div>
-        </div>
+      <div class="description center-align">
+        
+        <span id="subtitle"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+          var typed = new Typed("#subtitle", {
+              strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
+              startDelay: 300,
+              typeSpeed: 100,
+              loop: true,
+              backSpeed: 50,
+              showCursor: true
+          });
+        </script>
+        
+      </div>
     </div>
+  </div>
 </div>
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+  // 每天切换banner图，gif与jpg各7张，可以随时切换
+  var bannerUrl =
+    "/medias/banner/" + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
 </script>
 
 
@@ -435,19 +434,10 @@
                 </a>
                 
                 
-                <a href="/tags/%E6%A0%87%E7%AD%BE3/" title="标签3: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="标签3" style="background-color: #E8F8F5;">标签3
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/%E6%97%A5%E8%AE%B0/" title="日记: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="日记" style="background-color: #FEF9E7;">日记
+                            data-tagname="日记" style="background-color: #E8F8F5;">日记
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -456,7 +446,7 @@
                 <a href="/tags/%E4%BF%9D%E5%AF%86/" title="保密: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="保密" style="background-color: #F8F9F9;">保密
+                            data-tagname="保密" style="background-color: #FEF9E7;">保密
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -485,7 +475,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"测试","weight":3,"link":"/tags/测试/"},{"text":"标签1","weight":1,"link":"/tags/标签1/"},{"text":"标签2","weight":1,"link":"/tags/标签2/"},{"text":"标签3","weight":1,"link":"/tags/标签3/"},{"text":"日记","weight":1,"link":"/tags/日记/"},{"text":"保密","weight":1,"link":"/tags/保密/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"测试","weight":3,"link":"/tags/测试/"},{"text":"标签1","weight":1,"link":"/tags/标签1/"},{"text":"标签2","weight":1,"link":"/tags/标签2/"},{"text":"日记","weight":1,"link":"/tags/日记/"},{"text":"保密","weight":1,"link":"/tags/保密/"}], {
         autoResize: true
     });
 </script>
@@ -566,7 +556,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.6k</span>&nbsp;字
+                class="white-color">1.7k</span>&nbsp;字
             
             
             

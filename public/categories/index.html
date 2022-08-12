@@ -356,39 +356,38 @@
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    我是zhj
-                
-            </div>
+  <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+    <div class="brand">
+      <div class="title center-align">
+         我是zhj 
+      </div>
 
-            <div class="description center-align">
-                
-                    <span id="subtitle"></span>
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                    <script>
-                        var typed = new Typed("#subtitle", {
-                            strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
-                            startDelay: 300,
-                            typeSpeed: 100,
-                            loop: true,
-                            backSpeed: 50,
-                            showCursor: true
-                        });
-                    </script>
-                
-            </div>
-        </div>
+      <div class="description center-align">
+        
+        <span id="subtitle"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+          var typed = new Typed("#subtitle", {
+              strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
+              startDelay: 300,
+              typeSpeed: 100,
+              loop: true,
+              backSpeed: 50,
+              showCursor: true
+          });
+        </script>
+        
+      </div>
     </div>
+  </div>
 </div>
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+  // 每天切换banner图，gif与jpg各7张，可以随时切换
+  var bannerUrl =
+    "/medias/banner/" + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
 </script>
 
 
@@ -418,19 +417,10 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%88%86%E7%B1%BB3/" title="分类3: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F5EEF8;">分类3
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/categories/%E5%9F%BA%E6%9C%AC/%E5%88%86%E7%B1%BB1/" title="分类1: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">分类1
+                            style="background-color: #F5EEF8;">分类1
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -439,7 +429,7 @@
                 <a href="/categories/%E5%9F%BA%E6%9C%AC/%E5%88%86%E7%B1%BB1/%E8%8F%9C%E7%8B%97/" title="菜狗: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #E8F8F5;">菜狗
+                            style="background-color: #D5F5E3;">菜狗
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -448,7 +438,7 @@
                 <a href="/categories/%E6%97%A5%E5%B8%B8/" title="日常: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #FEF9E7;">日常
+                            style="background-color: #E8F8F5;">日常
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -496,7 +486,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"基本","max":4},{"name":"分类3","max":4},{"name":"分类1","max":4},{"name":"菜狗","max":4},{"name":"日常","max":4}],
+            indicator: [{"name":"基本","max":4},{"name":"分类1","max":4},{"name":"菜狗","max":4},{"name":"日常","max":4}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -507,7 +497,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [3,1,1,1,1],
+                    value : [3,1,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -593,7 +583,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.6k</span>&nbsp;字
+                class="white-color">1.7k</span>&nbsp;字
             
             
             

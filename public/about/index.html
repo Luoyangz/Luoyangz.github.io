@@ -363,39 +363,38 @@
 <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    我是zhj
-                
-            </div>
+  <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+    <div class="brand">
+      <div class="title center-align">
+         我是zhj 
+      </div>
 
-            <div class="description center-align">
-                
-                    <span id="subtitle"></span>
-                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                    <script>
-                        var typed = new Typed("#subtitle", {
-                            strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
-                            startDelay: 300,
-                            typeSpeed: 100,
-                            loop: true,
-                            backSpeed: 50,
-                            showCursor: true
-                        });
-                    </script>
-                
-            </div>
-        </div>
+      <div class="description center-align">
+        
+        <span id="subtitle"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+          var typed = new Typed("#subtitle", {
+              strings: ['生活犹如强奸，若无力反抗不如闭眼享受！',''],
+              startDelay: 300,
+              typeSpeed: 100,
+              loop: true,
+              backSpeed: 50,
+              showCursor: true
+          });
+        </script>
+        
+      </div>
     </div>
+  </div>
 </div>
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+  // 每天切换banner图，gif与jpg各7张，可以随时切换
+  var bannerUrl =
+    "/medias/banner/" + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
 </script>
 
 
@@ -411,21 +410,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">5</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">5</a></span>
+    <span class="count"><a href="/categories">4</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">6</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -441,21 +440,21 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">5</a></span>
+    <span class="count"><a href="/">4</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">5</a></span>
+    <span class="count"><a href="/categories">4</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags">6</a></span>
+    <span class="count"><a href="/tags">5</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -591,7 +590,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,4,1],
+                data: [0,0,0,0,0,0,0,0,0,0,0,3,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -633,7 +632,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"基本","value":3},{"name":"分类3","value":1},{"name":"分类1","value":1},{"name":"菜狗","value":1},{"name":"日常","value":1}],
+                data: [{"name":"基本","value":3},{"name":"分类1","value":1},{"name":"菜狗","value":1},{"name":"日常","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -657,7 +656,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["测试","标签1","标签2","标签3","日记","保密"]
+                data: ["测试","标签1","标签2","日记","保密"]
             }
         ],
         yAxis: [
@@ -670,7 +669,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [3,1,1,1,1,1],
+                data: [3,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -858,12 +857,6 @@
             
             
             
-            <a href="/tags/%E6%A0%87%E7%AD%BE3/">
-                <span class="chip center-align waves-effect waves-light chip-default">标签3</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E6%97%A5%E8%AE%B0/">
                 <span class="chip center-align waves-effect waves-light chip-default">日记</span>
             </a>
@@ -1005,7 +998,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.6k</span>&nbsp;字
+                class="white-color">1.7k</span>&nbsp;字
             
             
             

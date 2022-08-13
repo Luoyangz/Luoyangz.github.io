@@ -55,7 +55,7 @@
 .photo-item {
   display: block;
   padding: 10px;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   margin-bottom: 14px;
   font-size: 0;
   -moz-page-break-inside: avoid;

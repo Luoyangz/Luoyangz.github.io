@@ -25,9 +25,9 @@ menu:
       - name: 相册
         url: /galleries
         icon: fas fa-image
-      - name: 音乐
-        url: /musics
-        icon: fas fa-music
+      # - name: 音乐
+      #   url: /musics
+      #   icon: fas fa-music
   # Friends:
   #   url: /friends
   #   icon: fas fa-address-book

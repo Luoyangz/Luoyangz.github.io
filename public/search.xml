@@ -40,14 +40,14 @@
       
       <categories>
           
-          <category> 基本 </category>
+          <category> 傻吊 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试 </tag>
+            <tag> 菜狗 </tag>
             
         </tags>
       
@@ -90,22 +90,14 @@
       
       <categories>
           
-          <category> 基本 </category>
-          
-          <category> 分类1 </category>
-          
-          <category> 菜狗 </category>
+          <category> helloWorld </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 测试 </tag>
-            
-            <tag> 标签1 </tag>
-            
-            <tag> 标签2 </tag>
+            <tag> helloWorld </tag>
             
         </tags>
       

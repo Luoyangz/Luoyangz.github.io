@@ -47,12 +47,12 @@ for (var i = 0, len = photos.length; i < len; i++) {
                 </div>
             </div>
             <div  id="mygallery">
-                <div class="waterfall" id="encrypt-blog" style="display:none">
+                <div class="waterfall" id="" style="display:none">
                     <%- aes(imageStr, page.password) %>
                 </div>
             </div>
         <% } else { %>
-            <div class="waterfall" id="encrypt-blog">
+            <div class="waterfall" id="">
                 <%- imageStr %>
             </div>
         <% } %>

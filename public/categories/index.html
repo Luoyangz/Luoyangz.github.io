@@ -138,15 +138,6 @@
         </a>
       </li>
       
-      <li>
-        <a href="/musics">
-          
-          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>音乐</span>
-        </a>
-      </li>
-      
     </ul>
     
   </li>
@@ -261,16 +252,6 @@
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/musics " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
-			      
-		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -408,28 +389,10 @@
                 
                 
                 
-                <a href="/categories/%E5%9F%BA%E6%9C%AC/" title="基本: 3">
+                <a href="/categories/%E5%9F%BA%E6%9C%AC/" title="基本: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #F9EBEA;">基本
-                        <span class="tag-length">3</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%9F%BA%E6%9C%AC/%E5%88%86%E7%B1%BB1/" title="分类1: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F5EEF8;">分类1
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%9F%BA%E6%9C%AC/%E5%88%86%E7%B1%BB1/%E8%8F%9C%E7%8B%97/" title="菜狗: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">菜狗
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -438,7 +401,25 @@
                 <a href="/categories/%E6%97%A5%E5%B8%B8/" title="日常: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #E8F8F5;">日常
+                            style="background-color: #F5EEF8;">日常
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/helloWorld/" title="helloWorld: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">helloWorld
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%82%BB%E5%90%8A/" title="傻吊: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #E8F8F5;">傻吊
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -486,7 +467,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"基本","max":4},{"name":"分类1","max":4},{"name":"菜狗","max":4},{"name":"日常","max":4}],
+            indicator: [{"name":"基本","max":2},{"name":"日常","max":2},{"name":"helloWorld","max":2},{"name":"傻吊","max":2}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -497,7 +478,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [3,1,1,1],
+                    value : [1,1,1,1],
                     name : '文章分类数量'
                 }
             ]

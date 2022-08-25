@@ -21,9 +21,10 @@ var currentGallery = getCurrentGallery(galleries, pageTitle)
 var photos = currentGallery.photos;
 
 let imageStr = ''
-
-for (var i = 0, len = photos.length; i < len; i++) {
-    var photo = photos[i];
+var idx = 0
+var arr = photos[idx]
+for (var i = 0, len = arr.length; i < len; i++) {
+    var photo = arr[i];
      imageStr += "<a href=\"" + photo + "\"" +
             "     class=\"photo-item\" rel=\"example_group\"" +
             "     data-fancybox=\"images\">" +

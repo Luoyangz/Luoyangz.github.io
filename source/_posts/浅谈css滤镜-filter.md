@@ -22,7 +22,7 @@ filter是css的滤镜属性，一般用于图片的处理（如亮度、模糊�
 
 ![filter兼容性](https://cdn.jsdelivr.net/gh/ZhjDestiny/other/20220825-1.png)
 
-> filter的属性
+> filter的属性介绍
 
 |  属性名   | 描述  |
 |  ----  | ----  |
@@ -41,5 +41,10 @@ filter是css的滤镜属性，一般用于图片的处理（如亮度、模糊�
 > filter属性例子对比
 
 ![filter例子对比](https://cdn.jsdelivr.net/gh/ZhjDestiny/other/20220825-2.jpg)
+
+### 在线预览
+
+在线预览效果地址：<u>[点击预览](https://codepen.io/luoyangz/pen/QWmRPEM)</u>（注：本文所用图片外链皆是cdn.jsdelivr.net，有时候可能会打不开，有梯子的挂个梯子就好，没有就😂😂😂）
+
 ### <p style="color:red;">注意</p>
-<p style="color:#42b983">filter有个很有意思的属性，就是drop-shadow。从上方效果对比图可看出，drop-show可以对非规则的图片添加描边的阴影，而box-shadow只能对容易本身添加阴影，这是个很有意思的点。😄😄😄<p>
+<p style="color:#42b983">filter有个很有意思的属性，就是drop-shadow。从上方效果对比图可看出，drop-show可以对非规则的图片添加描边的阴影，而box-shadow只能对容器本身添加阴影，这是个很有意思的点。😄😄😄<p>

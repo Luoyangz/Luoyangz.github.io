@@ -1,11 +1,10 @@
 [
   {
     "name": "菜狗",
-    "cover": "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou4.jpg",
+    "cover": "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou24.png",
     "description": "菜狗相册",
     "photos": [
-      [
-        "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou11.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou11.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou12.gif",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou13.png",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou14.jpg",
@@ -14,20 +13,22 @@
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou17.png",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou18.png",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou19.png",
-      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou2.jpg"
-      ],
-      [
-        "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou3.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou2.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou3.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou4.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou5.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou6.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou7.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou8.jpg",
       "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou9.jpg",
-      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou10.jpg"
-      ]
-      
-      
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou10.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou20.webp",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou21.webp",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou23.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou22.gif",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou24.png",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou25.jpg",
+      "https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou26.png"
     ]
   },
   {

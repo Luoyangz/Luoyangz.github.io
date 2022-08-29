@@ -14,7 +14,7 @@ img:
 ---
 
 ## css-filter
-PS：filter有js的数组的filter方法，也有css的filter属性，我这里只谈论css的属性，查看数组filter，请点击<a href="/2022/08/25/js数组基本方法/#toc-heading-1"><font color="red">这里</font></a>跳转
+PS：filter有js的数组的filter方法，也有css的filter属性，我这里只谈论css的属性，查看数组filter，请点击<a href="/2022/08/25/js数组遍历方法/#toc-heading-4"><font color="red">这里</font></a>跳转
 
 filter是css的滤镜属性，一般用于图片的处理（如亮度、模糊度、饱和度等），也可以用于基本的dom处理
 

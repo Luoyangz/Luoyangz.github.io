@@ -1,9 +1,9 @@
 ---
 title: hexo笔记
 top: false
-cover: true
+cover: false
 toc: true
-mathjax: true
+mathjax: false
 date: 2022-07-19 14:42:35
 password:
 summary: '我是文章摘要'

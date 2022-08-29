@@ -136,13 +136,13 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/Luoyangz
+  url: https://github.com/Chulushan
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github: https://github.com/Luoyangz
+  github: https://github.com/Chulushan
   email: mrzhj_cn@foxmail.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
@@ -226,17 +226,17 @@ myProjects:
     blog:
       icon: fas fa-file-alt
       iconBackground: "linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)"
-      url: https://github.com/Luoyangz/Luoyangz.github.io
+      url: https://mrzhj.cn
       desc: This is Luoyangz hexo blog.
     readingGlass:
       icon: fas fa-database
       iconBackground: "linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)"
-      url: https://github.com/ZhjDeitiny/reading-glass
+      url: https://github.com/Chulushan/reading-glass
       desc: 这是zhj基于原生的放大镜插件。
     v3:
       icon: fas fa-file-alt
       iconBackground: "linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)"
-      url: https://github.com/ZhjDeitiny/v3
+      url: https://github.com/Chulushan/v3
       desc: 这是张浩京的v3测试库
     # hexo-theme-matery:
     #   icon: fas fa-file-alt
@@ -275,9 +275,9 @@ mySkills:
 myGallery:
   enable: true
   data:
-    - /medias/featureimages/18.jpg
-    - /medias/featureimages/1.jpg
-    - /medias/featureimages/2.jpg
+    - /medias/banner/1.jpg
+    - /medias/banner/2.jpg
+    - /medias/banner/3.jpg
 
 # Whether to display post-calender in the `archive` page
 # 设置在归档页面中是否显示'文章日历'控件
@@ -395,7 +395,7 @@ changyan:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/Luoyangz/Luoyangz.github.io
+  url: https://github.com/Chulushan
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,

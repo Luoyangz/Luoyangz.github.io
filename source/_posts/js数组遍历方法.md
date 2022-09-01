@@ -26,7 +26,7 @@ img:
 	})
 
 ## every
-> every遍历数组每一个元素，判断是否都满足某一个值，都满足treu，一个不满足就是false，返回值boolean类型。（遍历每一个元素）
+> true
 
 	let everyb = arr1.every(item=>{
 		return item > 1
@@ -76,7 +76,7 @@ img:
 ## reduce
 > reduce遍历，一般用于数组对象去重，求和或者多维数组转为一维数组，有四个参数，第一个是最终要返回的集合，第二个当前元素，第三个当前索引，第四个当前遍历的数组，方法最后的值是最终要返回的值的默认值
 
-*	数组求和
+1. 数组求和
 
 	let numArr = [1,2,3,4,5,6,7,8,9]
 	let num = numArr.reduce((aim,item,indx)=>{
@@ -85,7 +85,7 @@ img:
 	},0)
 	console.log(num)
 
-* 数组对象去重
+2. 数组对象去重
 
 
 	let arrObj = [
@@ -110,7 +110,7 @@ img:
 	},[])
 	console.log(riddingArr)
 
-*	多维数组转为一维数组
+3.	多维数组转为一维数组
 
 	let moreArr = [1,2,[3,4],[5,[6,[7,8],9],10],11]
 	const oneMore = function(arr){

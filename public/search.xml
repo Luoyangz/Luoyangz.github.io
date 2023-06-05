@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>package.json的思考</title>
+      <link href="/2023/06/05/package/"/>
+      <url>/2023/06/05/package/</url>
+      
+        <content type="html"><![CDATA[<h1 id="由element版本更新产生的bug引起针对于package-json的思考"><a href="#由element版本更新产生的bug引起针对于package-json的思考" class="headerlink" title="由element版本更新产生的bug引起针对于package.json的思考"></a>由element版本更新产生的bug引起针对于package.json的思考</h1><h2 id="问题的产生"><a href="#问题的产生" class="headerlink" title="问题的产生"></a>问题的产生</h2><ul><li>在项目开发过程中，某次提交代码后jenkins发布后element-plus的le-tabs组件出现了样式错误，排查后发现是.el-tabs__item这个类由以前的inline-block变成了flex布局，后来排查了下版本发现我本地的版本是2.2.12，然后打包出来是最新的2.3.5版本</li></ul><h2 id="我们先来看下-S-–save-d-D-–save-dev的区别"><a href="#我们先来看下-S-–save-d-D-–save-dev的区别" class="headerlink" title="我们先来看下-S/–save/-d/-D/–save-dev的区别"></a>我们先来看下-S/–save/-d/-D/–save-dev的区别</h2><p><font color="red">以下所有的命令都省略了依赖的名称</font></p><blockquote><p>npm install 或 npm install -S 或npm install  –save（yarn add 一般没有-s、-d）</p></blockquote><ul><li>其实这些命令都是一个意思（npm在5之后默认支持了–save），都是将装入package.json的dependencies下（这个是项目运行所需要的库，可以理解为生产依赖）</li></ul><blockquote><p>npm install -d 或 npm install -D 或npm install  –save–dev</p></blockquote><ul><li>这些会将依赖装入package.json的devDependencies下（这是开发环境下的依赖库，一般都是些vite、node、babel、ts、less这些东西我们在开发的时候所用到的，毕竟打包之后包是不需要这些东西的）</li></ul><blockquote><p>npm install -g</p></blockquote><ul><li>全局安装的我们一般在装vue或者react这种脚手架的会全局安装，安装项目内的依赖库一般不这样子使用</li></ul><h2 id="package-lock-json与yarn-lock"><a href="#package-lock-json与yarn-lock" class="headerlink" title="package-lock.json与yarn.lock"></a>package-lock.json与yarn.lock</h2><ol><li>前者是npm install产生的依赖缓存文件，而后者是yarn install产生的依赖缓存文件</li><li>如果我们没有改动package.json的依赖文件，那么我们install的话就是只读取lock文件的版本来安装依赖，如果有改动的话，他将会绕过lock，依据package.json的依赖版本文件配置来安装依赖。</li></ol><h2 id="package-json的改动"><a href="#package-json的改动" class="headerlink" title="package.json的改动"></a>package.json的改动</h2><ul><li>如果我们改动了某些依赖项的版本后者更新规则，如果存在node_modules的话，将会只更新我们改动的依赖，否则将会全部重新更新<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line"><span class="string">&quot;axios&quot;</span>: <span class="string">&quot;^0.27.2&quot;</span>,</span><br><span class="line"><span class="string">&quot;echarts&quot;</span>: <span class="string">&quot;^5.4.0&quot;</span>,</span><br><span class="line"><span class="string">&quot;element-plus&quot;</span>: <span class="string">&quot;~2.2.12&quot;</span>,</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// 举个例子：版本号一般都是1.1.2这中情况，第一个1表示主版本，第二个1表示次版本，第三个2表示修订版本</span></span><br><span class="line"><span class="comment">//          ^这个图标表示该依赖每次install主版本不能变，次版本与修订版本向上兼容，表示可以是1.1.n，或者1.2.n，1.3.n</span></span><br><span class="line"><span class="comment">//     ~这个图标表示该依赖每次install主次版本不能变，只能变修订版本，表示可以是1.1.3，1.1.4，1.1.n...</span></span><br><span class="line"><span class="comment">//     不加图标只有版本号表示每次install固定死这个版本</span></span><br></pre></td></tr></table></figure><h2 id="看我们最初的问题"><a href="#看我们最初的问题" class="headerlink" title="看我们最初的问题"></a>看我们最初的问题</h2><blockquote><p>&emsp;&emsp;为什么我们本地是package.json的版本是2.2.12，但是jenkins打包之后是2.3.5，原因就在于我这里jenkins的打包配置每次都会重新去install一下，而我们的element-plus版本设置了^，导致更新会向上更新获取最新的版本，然后我版本更新设置了~，也就是只更新修订版本，不更新次版本，然后只更新到了2.2.36，就没有了那个问题。</p></blockquote></li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p> &emsp;&emsp; 项目开发过程中总会遇见各种各样自奇怪的问题，怎么找到问题产生的原因，以及问题解决的思路这个是最重要的！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> js </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 配置项 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>进度条</title>
       <link href="/2022/09/19/%E8%BF%9B%E5%BA%A6%E6%9D%A1/"/>
       <url>/2022/09/19/%E8%BF%9B%E5%BA%A6%E6%9D%A1/</url>

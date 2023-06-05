@@ -8,7 +8,8 @@
 	部署本地数据到远程服务
 ## 部署发布
 	先hexo g生成静态文件，然后hexo d推动到远程，然后git add commit push 这种将代码提交到git
-
+## 域名站点
+	每次提交之后记得在git仓库的pages页写上domain（网站的值，记得加上https），每次提交之后都会刷新掉，挺烦的
 ### banner
 	1. 首页banner每天一张，各gif与jpg各有7张，可以随时切换，文件地址在\themes\matery\source\medias，生成文件在themes/layout/_partial/bg-cover-content.ejs
 	2. banner图最好不要有radios，因为banner有默认颜色，有radios的话，默认背景颜色会显示出来不好看

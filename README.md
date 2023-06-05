@@ -6,6 +6,8 @@
 	删除缓存，即删除public文件
 ## hexo d
 	部署本地数据到远程服务
+## 部署发布
+	先hexo g生成静态文件，然后hexo d推动到远程，然后git add commit push 这种将代码提交到git
 
 ### banner
 	1. 首页banner每天一张，各gif与jpg各有7张，可以随时切换，文件地址在\themes\matery\source\medias，生成文件在themes/layout/_partial/bg-cover-content.ejs

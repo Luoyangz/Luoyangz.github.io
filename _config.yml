@@ -43,15 +43,18 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
+# 自带主题，很丑
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
+# 自己装的主题
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''

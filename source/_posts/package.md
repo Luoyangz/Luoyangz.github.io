@@ -5,7 +5,7 @@ cover: false
 toc: true
 mathjax: true
 tags: ['配置项']
-categories: ['js']
+categories: ['vue','react']
 date: 2023-6-5 16:08:44
 password:
 summary:	由element版本更新产生的bug引起针对于package.json的思考
@@ -18,7 +18,7 @@ img:
 ## 问题的产生
 * 在项目开发过程中，某次提交代码后jenkins发布后element-plus的le-tabs组件出现了样式错误，排查后发现是.el-tabs__item这个类由以前的inline-block变成了flex布局，后来排查了下版本发现我本地的版本是2.2.12，然后打包出来是最新的2.3.5版本
 
-## 我们先来看下-S/--save/-d/-D/--save-dev的区别
+## -S/--save/-d/-D/--save-dev的区别
 <font color="red">以下所有的命令都省略了依赖的名称</font>
 
 > npm install 或 npm install -S 或npm install  --save（yarn add 一般没有-s、-d）

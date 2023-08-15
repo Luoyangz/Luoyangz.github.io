@@ -5,7 +5,7 @@ cover: false
 toc: true
 mathjax: true
 tags: ['max-blend-mode']
-categories: ['css']
+categories: ['html','css']
 date: 2022-08-26 20:40:52
 password:
 summary:	'max-blend-mode'
@@ -47,6 +47,6 @@ max-blend-mode意为混入，是css的一个属性，他描述了元素的内容
 > 2.也可用于图片的混合，或者背景的混合（背景混合属性：background-blend-mode，参数类似于混合），有点儿像css滤镜-filter的效果，不过filter是针对于一个dom整体的更改，而混合是针对于两个dom在重叠的地方显示的方式
 
 
-### 在线预览
+## 在线预览
 
 在线预览效果地址：<u>[点击预览](https://codepen.io/luoyangz/pen/MWVdxwe)</u>

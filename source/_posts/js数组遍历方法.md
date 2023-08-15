@@ -15,10 +15,12 @@ img:
 
 # 数组遍历方法
 <font color="#42b983">数组方法有很多种，本篇文章只谈论数组的遍历</font>
+
 ```javascript
 	let arr1 = [1,2,3,4,5]
 ```
 ## some
+
 > some表示某一个，遍历找到数组中的某一个满足条件的值，返回值boolean类型。（找到元素停止）
 ```javascript
 	let someb = arr1.some(item=>{

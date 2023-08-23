@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="js数组遍历方法, zhj的博客">
+    <meta name="keywords" content="mutationObserver与resizeObserver, zhj的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>js数组遍历方法 | zhj的博客</title>
+    <title>mutationObserver与resizeObserver | zhj的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -351,12 +351,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/ZhjDestiny/biyingImg/必应-中国洛阳市.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/ZhjDestiny/biyingImg/必应-莱奇沃思州立公园.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">js数组遍历方法</h1>
+                    <h1 class="description center-align post-title">mutationObserver与resizeObserver</h1>
                 </div>
             </div>
         </div>
@@ -472,8 +472,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Array/">
-                                <span class="chip bg-color">Array</span>
+                            <a href="/tags/observe/">
+                                <span class="chip bg-color">observe</span>
                             </a>
                         
                     </div>
@@ -484,7 +484,11 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/js/" class="post-category">
+                            <a href="/categories/html/" class="post-category">
+                                html
+                            </a>
+                        
+                            <a href="/categories/html/js/" class="post-category">
                                 js
                             </a>
                         
@@ -497,28 +501,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-25
+                    2023-08-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-08-15
+                    2023-08-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    608
+                    828
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -541,96 +545,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="数组遍历方法"><a href="#数组遍历方法" class="headerlink" title="数组遍历方法"></a>数组遍历方法</h1><p><font color="#42b983">数组方法有很多种，本篇文章只谈论数组的遍历</font></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> arr1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="some"><a href="#some" class="headerlink" title="some"></a>some</h2><blockquote>
-<p>some表示某一个，遍历找到数组中的某一个满足条件的值，返回值boolean类型。（找到元素停止）</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> someb <span class="token operator">=</span> arr1<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> item <span class="token operator">></span> <span class="token number">1</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="every"><a href="#every" class="headerlink" title="every"></a>every</h2><blockquote>
-<p>true</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> everyb <span class="token operator">=</span> arr1<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> item <span class="token operator">></span> <span class="token number">1</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="find"><a href="#find" class="headerlink" title="find"></a>find</h2><blockquote>
-<p>find遍历数组，根据条件判断，返回满足条件的元素本身。（找到元素停止）</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> findObj <span class="token operator">=</span> arr1<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> item <span class="token operator">></span> <span class="token number">1</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'find值'</span><span class="token punctuation">,</span>findObj<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h2><blockquote>
-<p>filter遍历数组，根据条件判断，找到满足条件的每一个值，返回一个新的数组。（遍历每一个元素）</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> filterArr <span class="token operator">=</span> arr1<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> item <span class="token operator">></span> <span class="token number">1</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>filterArr<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="forEach与for"><a href="#forEach与for" class="headerlink" title="forEach与for"></a>forEach与for</h2><blockquote>
-<p>forEach方法 该方法不能使用return跳出循环，break会报错，当用for循环的时候如果只是一个循环用return会报错，只能用berak跳出循环，如果想用return就要把他包括在一个方法里面，当然如果想用条件判断中途结束的话最好使用while或do while</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">arr1<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span>index</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span>item <span class="token operator">></span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token operator">!</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr1<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
-		<span class="token keyword">return</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="map"><a href="#map" class="headerlink" title="map"></a>map</h2><blockquote>
-<p>map方法遍历数组每一个元素，根据需要返回一个新的数组</p>
-</blockquote>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">	<span class="token keyword">let</span> mapArr <span class="token operator">=</span> arr1<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span>index</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
-	obj<span class="token punctuation">.</span>value <span class="token operator">=</span> item
-	obj<span class="token punctuation">.</span>index <span class="token operator">=</span> index
-	<span class="token keyword">return</span> obj
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mapArr'</span><span class="token punctuation">,</span>mapArr<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h2><blockquote>
-<p>reduce遍历，一般用于数组对象去重，求和或者多维数组转为一维数组，有四个参数，第一个是最终要返回的集合，第二个当前元素，第三个当前索引，第四个当前遍历的数组，方法最后的值是最终要返回的值的默认值</p>
-</blockquote>
-<ol>
-<li>数组求和<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> numArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span>
-<span class="token keyword">let</span> num <span class="token operator">=</span> numArr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">aim<span class="token punctuation">,</span>item<span class="token punctuation">,</span>indx</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	item <span class="token operator">></span> <span class="token number">5</span> <span class="token operator">?</span> aim <span class="token operator">+=</span> item <span class="token operator">:</span> aim
-	<span class="token keyword">return</span> aim
-<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>数组对象去重<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> arrObj <span class="token operator">=</span> <span class="token punctuation">[</span>
-	<span class="token punctuation">&#123;</span>
-		<span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王哥'</span><span class="token punctuation">,</span>
-		<span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">'11'</span><span class="token punctuation">,</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span>
-		<span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'张哥'</span><span class="token punctuation">,</span>
-		<span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">'12'</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span>
-		<span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'李哥'</span><span class="token punctuation">,</span>
-		<span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">'12'</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span>
-		<span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'张哥'</span><span class="token punctuation">,</span>
-		<span class="token literal-property property">age</span><span class="token operator">:</span> <span class="token string">'13'</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">]</span>
-<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
-<span class="token keyword">let</span> riddingArr <span class="token operator">=</span> arrObj<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span>item<span class="token punctuation">,</span>index<span class="token punctuation">,</span>arrObj</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span>
-	obj<span class="token punctuation">[</span>item<span class="token punctuation">.</span>age<span class="token punctuation">]</span> <span class="token operator">?</span> <span class="token boolean">false</span> <span class="token operator">:</span> obj<span class="token punctuation">[</span>item<span class="token punctuation">.</span>age<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token operator">&amp;&amp;</span> arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
-	<span class="token keyword">return</span> arr
-<span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>riddingArr<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li>   多维数组转为一维数组<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">let</span> moreArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">]</span>
-<span class="token keyword">const</span> <span class="token function-variable function">oneMore</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-	<span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">pre<span class="token punctuation">,</span>item</span><span class="token punctuation">)</span><span class="token operator">=></span>pre<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token function">oneMore</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token operator">:</span> item<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <h2 id="mutationObserver"><a href="#mutationObserver" class="headerlink" title="mutationObserver"></a>mutationObserver</h2><p><strong>该方法是观察dom的变化，可以监听dom本身的一些变化，包括文本、属性、子节点与所有后代节点的变动，需要注意的是 <font color="red">该方法是异步触发的</font>，观察的dom发生变动后不会立即触发，而是当dom停止变动后才会触发。</strong></p>
+<p>异步的原因是，dom的变化常常都不是单个因素的变化，如果每个变化都触发一次观察器，那么性能消耗会很大，所以mutationObserver是当dom停止变动后才会触发。可以想象往通过遍历往dom中添加成百上千的子节点，这是比较消耗性能的🤣🤣🤣。</p>
+<h3 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h3><p>兼容性非常好，可以无压力使用，<a target="_blank" rel="noopener" href="https://caniuse.com/mutationobserver">点击查看</a></p>
+<h3 id="新建观察器"><a href="#新建观察器" class="headerlink" title="新建观察器"></a>新建观察器</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MutationObserver</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+	childList：<span class="token boolean">true</span><span class="token punctuation">,</span>
+	attributes：<span class="token boolean">true</span><span class="token punctuation">,</span>
+	characterData：<span class="token boolean">true</span><span class="token punctuation">,</span>
+	subtree：<span class="token boolean">true</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">oneMore</span><span class="token punctuation">(</span>moreArr<span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h2></li>
-</ol>
-<p>在线预览效果地址：<u><a target="_blank" rel="noopener" href="https://codepen.io/luoyangz/pen/BarXBRJ">点击预览</a></u></p>
+observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>dom<span class="token punctuation">,</span> config<span class="token punctuation">)</span>	<span class="token comment">// 开启观察</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>观察器的回调函数callback在每次dom变化完成后触发，而观察期本身observer接受两个参数，第一个是观察的dom，第二个是配置对象，可以观察变动的属性，包括：</p>
+<ul>
+<li><font color="red">childList</font>：子节点的变动，包括新增节点和删除节点</li>
+<li><font color="red">attributes</font>：属性的变动</li>
+<li><font color="red">characterData</font>：节点内容或节点文本的变动</li>
+<li><font color="red">subtree</font>：所有后代节点的变动<br>需要观察哪个变动就添加哪个设置为true即可，PS：<font color="#42b983">不能单独观察subtree，必须同时设置childList、attributes、characterData一个或多个为true。</font></li>
+</ul>
+<p>除了这些属性外，也可以配置以下属性：</p>
+<ul>
+<li><font color="red">attributeOldValue</font>：布尔类型，观察属性的变动，并记录变动前的属性值</li>
+<li><font color="red">characterDataOldValue</font>：布尔类型，观察文本节点或节点文本的变动时，记录变动前的值</li>
+<li><font color="red">attributeFilter</font>：数组，观察特定属性，例如[“class”,”id”,”title”]等</li>
+</ul>
+<h3 id="停止观察-disconnect-与takeRecords"><a href="#停止观察-disconnect-与takeRecords" class="headerlink" title="停止观察 disconnect()与takeRecords()"></a>停止观察 disconnect()与takeRecords()</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">observer<span class="token punctuation">.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">// 停止观察</span>
+observer<span class="token punctuation">.</span><span class="token function">takeRecords</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">// 停止观察且返回该观察到的所有变动记录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="resizeObserver"><a href="#resizeObserver" class="headerlink" title="resizeObserver"></a>resizeObserver</h2><p><strong>该方法是观察dom的所有尺寸变化，包括但不限于宽高，边框之类的尺寸变化，<font color="red">同步触发</font>其实观察元素的尺寸的话，window.resize也是可以的，当窗口变化的时候我们读取我们关注的元素的尺寸，但是实际上是有局限性的，比如说窗口没有变化，但是我们关注的dom尺寸变化他就不一定能观察到，而且这个方法是关注的页面上所有的dom，这个有点儿浪费性能。</strong></p>
+<h3 id="兼容性-1"><a href="#兼容性-1" class="headerlink" title="兼容性"></a>兼容性</h3><p>兼容性非常好，可以放心使用，<a target="_blank" rel="noopener" href="https://caniuse.com/resizeobserver">点击查看</a></p>
+<h3 id="新建观察器-1"><a href="#新建观察器-1" class="headerlink" title="新建观察器"></a>新建观察器</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> domRef <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.demo'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ResizeObserver</span><span class="token punctuation">(</span><span class="token parameter">entries</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>domRef<span class="token punctuation">)</span>	<span class="token comment">// 开启观察</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>回调函数中包含了观察dom的所有尺寸数据，可根据这些数据完成我们想要的操作</p>
+<h3 id="停止观察-disconnect-与unobserve"><a href="#停止观察-disconnect-与unobserve" class="headerlink" title="停止观察 disconnect()与unobserve()"></a>停止观察 disconnect()与unobserve()</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> domRef <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.demo'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ResizeObserver</span><span class="token punctuation">(</span><span class="token parameter">entries</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>entries<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>domRef<span class="token punctuation">)</span>	<span class="token comment">// 开启观察</span>
+ResizeObserver<span class="token punctuation">.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">// 取消所有的resizeObserve观察</span>
+ResizeObserver<span class="token punctuation">.</span><span class="token function">unobserve</span><span class="token punctuation">(</span>domRef<span class="token punctuation">)</span>	<span class="token comment">// 取消指定的观察器</span>
+domRef<span class="token punctuation">.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">// 这样也可以去掉domRef的观察</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p><font color="red">当你在用了这两个api之后，如果你销毁当前的组件的时候，一定记着要执行disconnect方法，否则控制台可能会报错。</font></p>
+<h2 id="查看实例"><a href="#查看实例" class="headerlink" title="查看实例"></a>查看实例</h2><p><a target="_blank" rel="noopener" href="https://codepen.io/luoyangz/pen/abRxeBQ">点击查看实例</a></p>
 
                 
             </div>
@@ -657,7 +617,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luoyangz.github.io/2022/08/25/js%E6%95%B0%E7%BB%84%E9%81%8D%E5%8E%86%E6%96%B9%E6%B3%95/">https://luoyangz.github.io/2022/08/25/js%E6%95%B0%E7%BB%84%E9%81%8D%E5%8E%86%E6%96%B9%E6%B3%95/</a>
+                    <a href="https://luoyangz.github.io/2023/08/23/mutationObserver%E4%B8%8EresizeObserver/">https://luoyangz.github.io/2023/08/23/mutationObserver%E4%B8%8EresizeObserver/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -695,8 +655,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Array/">
-                                    <span class="chip bg-color">Array</span>
+                                <a href="/tags/observe/">
+                                    <span class="chip bg-color">observe</span>
                                 </a>
                             
                         </div>
@@ -867,7 +827,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
         repo: '',
         owner: '',
         admin: null,
-        id: '2022-08-25T21-48-27',
+        id: '2023-08-23T10-15-22',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -893,29 +853,30 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/26/css%E6%B7%B7%E5%85%A5max-blend-mode/">
+                <a href="/2023/08/23/mutationObserver%E4%B8%8EresizeObserver/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/ZhjDestiny/biyingImg/必应-白鹭.jpg" class="responsive-img" alt="css混入之max-blend-mode">
+                        <img src="https://cdn.jsdelivr.net/gh/ZhjDestiny/biyingImg/必应-莱奇沃思州立公园.jpg" class="responsive-img" alt="mutationObserver与resizeObserver">
                         
-                        <span class="card-title">css混入之max-blend-mode</span>
+                        <span class="card-title">mutationObserver与resizeObserver</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            max-blend-mode
+                            监听dom的所有变化
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -924,19 +885,20 @@ console<span class="token punctuation">.</span><span class="token function">log<
                                     html
                                 </a>
                             
-                            <a href="/categories/html/css/" class="post-category">
-                                    css
+                            <a href="/categories/html/js/" class="post-category">
+                                    js
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/max-blend-mode/">
-                        <span class="chip bg-color">max-blend-mode</span>
+                    <a href="/tags/observe/">
+                        <span class="chip bg-color">observe</span>
                     </a>
                     
                 </div>
@@ -950,35 +912,34 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/25/%E6%B5%85%E8%B0%88css%E6%BB%A4%E9%95%9C-filter/">
+                <a href="/2023/08/15/zhj.js/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/ZhjDestiny/woyungif/img-0020rFOVgy1gk76cw3d6ig60p00kg4qv02.gif" class="responsive-img" alt="zhj.js">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/ZhjDestiny/biyingImg/必应-猎户座大星云.jpg" class="responsive-img" alt="浅谈css滤镜-filter">
-                        
-                        <span class="card-title">浅谈css滤镜-filter</span>
+                        <span class="card-title">zhj.js</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            浅谈css滤镜-filter
+                            自己的常用方法npm包
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/html/" class="post-category">
-                                    html
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
                                 </a>
                             
-                            <a href="/categories/html/css/" class="post-category">
-                                    css
+                            <a href="/categories/vue/react/" class="post-category">
+                                    react
                                 </a>
                             
                             
@@ -988,8 +949,8 @@ console<span class="token punctuation">.</span><span class="token function">log<
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/css-filter/">
-                        <span class="chip bg-color">css-filter</span>
+                    <a href="/tags/js/">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
                 </div>

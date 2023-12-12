@@ -4,5 +4,5 @@ date: 2020-02-19 10:51:50
 type: "gallery"
 layout: "gallery"
 password: 
-img: https://cdn.jsdelivr.net/gh/ZhjDestiny/caigou/caigou24.png
+img: http://pic.mrzhj.cn/caigou/caigou24.png
 ---

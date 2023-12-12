@@ -10,7 +10,7 @@ date: 2023-8-15 14:51:17
 password:
 summary: 自己的常用方法npm包
 coverImg: 
-img: 'https://cdn.jsdelivr.net/gh/ZhjDestiny/woyungif/img-0020rFOVgy1gk76cw3d6ig60p00kg4qv02.gif'
+img: 'http://pic.mrzhj.cn/woyungif/img-0020rFOVgy1gk76cw3d6ig60p00kg4qv02.gif'
 ---
 
 

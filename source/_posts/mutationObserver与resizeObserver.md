@@ -82,7 +82,7 @@ img:
 	observer.observe(domRef)	// 开启观察
 	ResizeObserver.disconnect()	// 取消所有的resizeObserve观察
 	ResizeObserver.unobserve(domRef)	// 取消指定的观察器
-	domRef.disconnect()	// 这样也可以去掉domRef的观察
+	observer.disconnect()	// 这样也可以去掉domRef的观察
 ```
 
 ## 注意事项

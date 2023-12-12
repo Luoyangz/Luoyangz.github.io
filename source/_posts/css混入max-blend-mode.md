@@ -19,7 +19,7 @@ max-blend-mode意为混入，是css的一个属性，他描述了元素的内容
 
 > max-blend-mode的兼容性
 
-![max-blend-mode兼容性](https://cdn.jsdelivr.net/gh/ZhjDestiny/other/2022826-1.png)
+![max-blend-mode兼容性](http://pic.mrzhj.cn/blog/2022826-1.png)
 
 > max-blend-mode的属性介绍
 

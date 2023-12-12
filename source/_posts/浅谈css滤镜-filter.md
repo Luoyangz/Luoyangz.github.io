@@ -20,7 +20,7 @@ filter是css的滤镜属性，一般用于图片的处理（如亮度、模糊�
 
 > filter的兼容性
 
-![filter兼容性](https://cdn.jsdelivr.net/gh/ZhjDestiny/other/20220825-1.png)
+![filter兼容性](http://pic.mrzhj.cn/blog/20220825-1.png)
 
 > filter的属性介绍
 
@@ -40,7 +40,7 @@ filter是css的滤镜属性，一般用于图片的处理（如亮度、模糊�
 
 > filter属性例子对比
 
-![filter例子对比](https://cdn.jsdelivr.net/gh/ZhjDestiny/other/20220825-2.jpg)
+![filter例子对比](http://pic.mrzhj.cn/blog/20220825-2.jpg)
 
 ### 在线预览
 

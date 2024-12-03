@@ -29,9 +29,12 @@
 <% if (theme.banner.enable) { %>
 <script>
   // 每天切换banner图，gif与jpg各7张，可以随时切换
+  // 这是本地的banner配置图
   var bannerUrl =
     "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getDay() + '.gif'
-  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
+  // 这是外链的banner配置图
+  var url = 'http://pic.mrzhj.cn/blogBanner/' + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + url + ")")
 </script>
 <% } else { %>
 <script>

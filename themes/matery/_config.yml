@@ -23,11 +23,13 @@ menu:
     icon: fas fa-list
     children:
       - name: 相册
-        url: /galleries
+        # url: /galleries
+        url: 'http://album.mrzhj.cn'
         icon: fas fa-image
-      # - name: 音乐
-      #   url: /musics
-      #   icon: fas fa-music
+      - name: 音乐
+        # url: /musics
+        url: 'http://music.mrzhj.cn'
+        icon: fas fa-music
   # Friends:
   #   url: /friends
   #   icon: fas fa-address-book
@@ -75,8 +77,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 此生期望
-  text: 只求无愧于天，无愧于地，无愧于父母，无愧于本心，健健康康过完此生。--一个艰难苟活的打工人
+  title: 言念君子，温其如玉
+  text:  请不要把陌生人的些许善意，视为珍稀的瑰宝，却把身边亲近人的全部付出，当做天经地义的事情，对其视而不见。
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -91,14 +93,14 @@ music:
   ## type可选：song（歌曲），playlist（歌单），album（专辑），search（搜索关键字），artist（歌手）id获取示例: 打开网易云音乐，选择喜欢的歌单，然后点击分享,生成插件外链
   id: 86381 # require song id/playlist id/album id/search keyword
   fixed: true # 是否开启吸底模式
-  autoplay: false # 是否自动播放
+  autoplay: true # 是否自动播放
   theme: "#42b983" # 歌词颜色
   loop: "all" # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: "random" # 音频循环顺序, 可选值: 'list', 'random'
   preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
   listFolded: false # 列表默认折叠
-  hideLrc: true # 隐藏歌词
+  hideLrc: false # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -410,7 +412,7 @@ verifyPassword:
   errorMessage: 密码错误，将返回主页！
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
-# 不蒜子(http://busuanzi.ibruce.info/) 网站统计
+# 卜蒜子(http://busuanzi.ibruce.info/) 网站统计
 # zhj:此处需要注意本地服务的统计数据是不正确的，因为网络上有很多人启用本地服务与4000端口
 busuanziStatistics:
   enable: true

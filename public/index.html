@@ -130,11 +130,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/galleries">
+        <a target="_blank" rel="noopener" href="http://album.mrzhj.cn">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="http://music.mrzhj.cn">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
       </li>
       
@@ -247,11 +256,21 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a target="_blank" rel="noopener" href="http://album.mrzhj.cn " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="http://music.mrzhj.cn " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -420,9 +439,12 @@
 
 <script>
   // 每天切换banner图，gif与jpg各7张，可以随时切换
+  // 这是本地的banner配置图
   var bannerUrl =
     "/medias/banner/" + new Date().getDay() + '.gif'
-  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
+  // 这是外链的banner配置图
+  var url = 'http://pic.mrzhj.cn/blogBanner/' + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + url + ")")
 </script>
 
 
@@ -487,29 +509,6 @@
                             </div>
                             <div class="cover-btns">
                                 <a href="/2022/07/01/hello-world/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('http://pic.mrzhj.cn/caigou/caigou24.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">菜狗专属</div>
-                            <div class="description center-align">
-                                
-                                    菜狗测试
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/07/19/%E8%8F%9C%E7%8B%97/" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -597,12 +596,12 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;此生期望
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;言念君子，温其如玉
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            只求无愧于天，无愧于地，无愧于父母，无愧于本心，健健康康过完此生。--一个艰难苟活的打工人
+            请不要把陌生人的些许善意，视为珍稀的瑰宝，却把身边亲近人的全部付出，当做天经地义的事情，对其视而不见。
         </div>
     </div>
 </div>
@@ -717,7 +716,7 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2024/12/02/%E7%94%9F%E6%88%90Token/">
+                    <a href="/2024/12/02/git%E7%94%9F%E6%88%90Token/">
                         <div class="card-image">
                             
                             
@@ -999,16 +998,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1033,7 +1028,7 @@
                    type="song"
                    id="86381"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'

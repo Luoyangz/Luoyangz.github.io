@@ -130,11 +130,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/galleries">
+        <a target="_blank" rel="noopener" href="http://album.mrzhj.cn">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="http://music.mrzhj.cn">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
       </li>
       
@@ -247,11 +256,21 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a target="_blank" rel="noopener" href="http://album.mrzhj.cn " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="http://music.mrzhj.cn " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -338,7 +357,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '4b45f6ae1d6c390ce9e6fd9727e3a9fed9bf294af631e717025a42f099848c8e';
+        let pwd = '57f3717546b7f8c9174697058d51e20f5271a063f684d529c442e13bea0f97ed';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -508,7 +527,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-12-02
+                    2024-12-03
                 </div>
                 
 
@@ -1129,16 +1148,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1163,7 +1178,7 @@
                    type="song"
                    id="86381"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'

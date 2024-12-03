@@ -130,11 +130,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/galleries">
+        <a target="_blank" rel="noopener" href="http://album.mrzhj.cn">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="http://music.mrzhj.cn">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
       </li>
       
@@ -247,11 +256,21 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a target="_blank" rel="noopener" href="http://album.mrzhj.cn " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="http://music.mrzhj.cn " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -366,9 +385,12 @@
 
 <script>
   // 每天切换banner图，gif与jpg各7张，可以随时切换
+  // 这是本地的banner配置图
   var bannerUrl =
     "/medias/banner/" + new Date().getDay() + '.gif'
-  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
+  // 这是外链的banner配置图
+  var url = 'http://pic.mrzhj.cn/blogBanner/' + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + url + ")")
 </script>
 
 
@@ -479,15 +501,6 @@
                 </a>
                 
                 
-                <a href="/categories/%E5%82%BB%E5%90%8A/" title="傻吊: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F8C471;">傻吊
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
             </div>
         </div>
     </div>
@@ -562,16 +575,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -596,7 +605,7 @@
                    type="song"
                    id="86381"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'

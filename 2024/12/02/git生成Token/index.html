@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="菜狗专属, zhj的博客">
+    <meta name="keywords" content="git生成Token, zhj的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>菜狗专属 | zhj的博客</title>
+    <title>git生成Token | zhj的博客</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -130,11 +130,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/galleries">
+        <a target="_blank" rel="noopener" href="http://album.mrzhj.cn">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="http://music.mrzhj.cn">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
       </li>
       
@@ -247,11 +256,21 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a target="_blank" rel="noopener" href="http://album.mrzhj.cn " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="http://music.mrzhj.cn " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -338,7 +357,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'de92adb795a5b80e3683e01f1a74f1fe550e8fa4a945bcb14a6d35538c1f7e97';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -351,12 +370,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('http://pic.mrzhj.cn/biying/必应-法兰克福.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://pic.mrzhj.cn/biying/必应-意大利科尔蒂纳丹佩佐市.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">菜狗专属</h1>
+                    <h1 class="description center-align post-title">git生成Token</h1>
                 </div>
             </div>
         </div>
@@ -472,12 +491,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E4%BF%9D%E5%AF%86/">
-                                <span class="chip bg-color">保密</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%8F%9C%E7%8B%97/">
-                                <span class="chip bg-color">菜狗</span>
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -488,8 +503,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%82%BB%E5%90%8A/" class="post-category">
-                                傻吊
+                            <a href="/categories/git/" class="post-category">
+                                git
                             </a>
                         
                     </div>
@@ -501,7 +516,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-19
+                    2024-12-02
                 </div>
                 
 
@@ -515,7 +530,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5
+                    128
                 </div>
                 
 
@@ -545,9 +560,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="菜狗纯二杯"><a href="#菜狗纯二杯" class="headerlink" title="菜狗纯二杯"></a>菜狗纯二杯</h2><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F14299655682%2F1000&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660815060&t=319e8e185c24e61787ce74c6bfbcb5b0">
-
-
+                <h2 id="生成步骤"><a href="#生成步骤" class="headerlink" title="生成步骤"></a>生成步骤</h2><blockquote>
+<p>Setting -&gt; Developer settings -&gt; Personal access tokens -&gt; Tokens(classic) -&gt; Generate new token(classic)</p>
+</blockquote>
+<p><img src="http://pic.mrzhj.cn/blog/20241202-4.png" alt="填写信息"></p>
+<blockquote>
+<ol>
+<li>有效期，自己选择，可以选择永不过期，但是git好像会自动清除1年内未使用的token</li>
+<li>选择权限，一般选择repo即可（给予该token对于该仓库pull与push的权限），如果需要管理用户权限，可以勾选user</li>
+</ol>
+</blockquote>
+<p style="color:red;font-size:23px;">注意，注意，注意：生成后的token一定要及时保存，因为你只要离开当前页面，该token就不会再显示了！！！</p>
                 
             </div>
             <hr/>
@@ -573,7 +596,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://luoyangz.github.io/2022/07/19/%E8%8F%9C%E7%8B%97/">https://luoyangz.github.io/2022/07/19/%E8%8F%9C%E7%8B%97/</a>
+                    <a href="https://luoyangz.github.io/2024/12/02/git%E7%94%9F%E6%88%90Token/">https://luoyangz.github.io/2024/12/02/git%E7%94%9F%E6%88%90Token/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -611,12 +634,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E4%BF%9D%E5%AF%86/">
-                                    <span class="chip bg-color">保密</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%8F%9C%E7%8B%97/">
-                                    <span class="chip bg-color">菜狗</span>
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -787,7 +806,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2022-07-19T14-42-35',
+        id: '2024-12-02T10-11-32',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -817,31 +836,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/07/19/hexo%E7%AC%94%E8%AE%B0/">
+                <a href="/2024/12/02/git%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%A4%84%E7%90%86/">
                     <div class="card-image">
                         
                         
-                        <img src="http://pic.mrzhj.cn/biying/必应-迷人的苏格兰岛屿.jpg" class="responsive-img" alt="hexo笔记">
+                        <img src="http://pic.mrzhj.cn/biying/必应-贾斯珀国家公园.jpg" class="responsive-img" alt="git提交失败的处理">
                         
-                        <span class="card-title">hexo笔记</span>
+                        <span class="card-title">git提交失败的处理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我是文章摘要
+                            git提交失败如何处理
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-12-02
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%9F%BA%E6%9C%AC/" class="post-category">
-                                    基本
+                            <a href="/categories/git/" class="post-category">
+                                    git
                                 </a>
                             
                             
@@ -851,8 +870,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -866,31 +885,35 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/01/hello-world/">
+                <a href="/2023/08/23/mutationObserver%E4%B8%8EresizeObserver/">
                     <div class="card-image">
                         
                         
-                        <img src="http://pic.mrzhj.cn/biying/必应-捷克.jpg" class="responsive-img" alt="Hello World">
+                        <img src="http://pic.mrzhj.cn/biying/必应-莱奇沃思州立公园.jpg" class="responsive-img" alt="mutationObserver与resizeObserver">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">mutationObserver与resizeObserver</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            hello world
+                            监听dom的所有变化
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-08-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/helloWorld/" class="post-category">
-                                    helloWorld
+                            <a href="/categories/html/" class="post-category">
+                                    html
+                                </a>
+                            
+                            <a href="/categories/html/js/" class="post-category">
+                                    js
                                 </a>
                             
                             
@@ -900,8 +923,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/helloWorld/">
-                        <span class="chip bg-color">helloWorld</span>
+                    <a href="/tags/observe/">
+                        <span class="chip bg-color">observe</span>
                     </a>
                     
                 </div>
@@ -1078,16 +1101,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -1112,7 +1131,7 @@
                    type="song"
                    id="86381"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'

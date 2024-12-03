@@ -130,11 +130,20 @@
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/galleries">
+        <a target="_blank" rel="noopener" href="http://album.mrzhj.cn">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>相册</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="http://music.mrzhj.cn">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>音乐</span>
         </a>
       </li>
       
@@ -247,11 +256,21 @@
               
                 <li>
 
-                  <a href="/galleries " style="margin-left:75px">
+                  <a target="_blank" rel="noopener" href="http://album.mrzhj.cn " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
 		          <span>相册</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="http://music.mrzhj.cn " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>音乐</span>
                   </a>
                 </li>
               
@@ -367,9 +386,12 @@
 
 <script>
   // 每天切换banner图，gif与jpg各7张，可以随时切换
+  // 这是本地的banner配置图
   var bannerUrl =
     "/medias/banner/" + new Date().getDay() + '.gif'
-  $(".bg-cover").css("background-image", "url(" + bannerUrl + ")")
+  // 这是外链的banner配置图
+  var url = 'http://pic.mrzhj.cn/blogBanner/' + new Date().getDay() + '.gif'
+  $(".bg-cover").css("background-image", "url(" + url + ")")
 </script>
 
 
@@ -386,57 +408,6 @@
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/07/19/%E8%8F%9C%E7%8B%97/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="http://pic.mrzhj.cn/biying/必应-法兰克福.jpg" class="responsive-img" alt="菜狗专属">
-                            
-                            <span class="card-title">菜狗专属</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                菜狗测试
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%82%BB%E5%90%8A/" class="post-category">
-                                    傻吊
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E4%BF%9D%E5%AF%86/">
-                            <span class="chip bg-color">保密</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%8F%9C%E7%8B%97/">
-                            <span class="chip bg-color">菜狗</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -523,16 +494,12 @@
 <style>
     .aplayer .aplayer-lrc p {
         
-        display: none;
-        
         font-size: 12px;
         font-weight: 700;
         line-height: 16px !important;
     }
 
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
         
         font-size: 15px;
         color: #42b983;
@@ -557,7 +524,7 @@
                    type="song"
                    id="86381"
                    fixed='true'
-                   autoplay='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
